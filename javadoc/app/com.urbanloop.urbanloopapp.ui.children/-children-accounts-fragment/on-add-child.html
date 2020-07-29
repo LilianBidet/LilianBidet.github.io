@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChildrenAccountsFragment.onAddChild - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.children</a>&nbsp;/&nbsp;<a href="index.html">ChildrenAccountsFragment</a>&nbsp;/&nbsp;<a href="./on-add-child.html">onAddChild</a><br/>
+<br/>
+<h1>onAddChild</h1>
+<a name="com.urbanloop.urbanloopapp.ui.children.ChildrenAccountsFragment$onAddChild()"></a>
+<code><span class="keyword">private</span> <span class="keyword">fun </span><span class="identifier">onAddChild</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Listen to the Add button</p>
+<p>This method calls <a href="https://developer.android.com/reference/android/view/View#setOnClickListener(android.view.View.OnClickListener)">setOnClickListener</a> from the button view to invoke a callback when the button is clicked.
+Then, two cases are handled :</p>
+<ul><li>If the user is not a child, the callback calls <a href="go-to-register-child-activity.html">goToRegisterChildActivity</a> to go to the <a href="../../com.urbanloop.urbanloopapp.ui.register-child/-register-child-activity/index.html">RegisterChildActivity</a></li>
+<li>If the user is a child, it shows a <a href="https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar">Snackbar</a> to warn the child about the impossibility to use this functionality.</li>
+</ul>
+</BODY>
+</HTML>

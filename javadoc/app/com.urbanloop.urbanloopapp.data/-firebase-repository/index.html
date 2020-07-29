@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FirebaseRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.data</a>&nbsp;/&nbsp;<a href="./index.html">FirebaseRepository</a><br/>
+<br/>
+<h1>FirebaseRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">FirebaseRepository</span></code>
+<p>A Repository class used to mediate between Firebase and the rest of the application</p>
+<p>This class can provide some Firebase references commonly used by the application such as :</p>
+<ul><li>The current <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> signed in to the application</li>
+<li>A <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a></li>
+<li>A <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/CollectionReference">CollectionReference</a></li>
+<li>A <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/StorageReference">StorageReference</a></li>
+</ul>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FirebaseRepository</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A Repository class used to mediate between Firebase and the rest of the application</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="firebase-auth.html">firebaseAuth</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseAuth</span><span class="symbol">: </span><span class="identifier">FirebaseAuth</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth">FirebaseAuth</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-database.html">firebaseDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseDatabase</span><span class="symbol">: </span><span class="identifier">FirebaseFirestore</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FirebaseFirestore">FirebaseFirestore</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="storage.html">storage</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">storage</span><span class="symbol">: </span><span class="identifier">FirebaseStorage</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/FirebaseStorage">FirebaseStorage</a> instance</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-current-user.html">getCurrentUser</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCurrentUser</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">FirebaseUser</span><span class="symbol">?</span></code>
+<p>Gets the current <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> authenticated in the application</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-station-data-reference-from-i-d.html">getStationDataReferenceFromID</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStationDataReferenceFromID</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.FirebaseRepository$getStationDataReferenceFromID(kotlin.String)/stationID">stationID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">DocumentReference</span></code>
+<p>Gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+linked to the station whose id corresponds to the given string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-stations-data-reference.html">getStationsDataReference</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStationsDataReference</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CollectionReference</span></code>
+<p>Gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/CollectionReference">CollectionReference</a> of the collection of stations in the Firebase database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-storage-reference.html">getStorageReference</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStorageReference</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">StorageReference</span></code>
+<p>Gets the Firebase <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/StorageReference">StorageReference</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-ticket-data-from-i-d.html">getTicketDataFromID</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTicketDataFromID</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.FirebaseRepository$getTicketDataFromID(kotlin.String)/ticketID">ticketID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">DocumentReference</span></code>
+<p>Gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+linked to the Ticket identified with the given string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-data-reference-from-i-d.html">getUserDataReferenceFromID</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUserDataReferenceFromID</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.FirebaseRepository$getUserDataReferenceFromID(kotlin.String)/userID">userID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">DocumentReference</span></code>
+<p>Gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+linked to the user whose uid corresponds to the given string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-data-reference-from-user.html">getUserDataReferenceFromUser</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUserDataReferenceFromUser</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.FirebaseRepository$getUserDataReferenceFromUser(com.google.firebase.auth.FirebaseUser)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">DocumentReference</span></code>
+<p>Gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+linked to the provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> in the Firebase database</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SplashRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.data</a>&nbsp;/&nbsp;<a href="./index.html">SplashRepository</a><br/>
+<br/>
+<h1>SplashRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">SplashRepository</span></code>
+<p>A Repository class used to mediate between Firebase and the rest of the application to know the authentication state of the application in the <a href="#">SplashActivity</a></p>
+<p>This class can :</p>
+<ul><li>Check if a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> is authenticated</li>
+<li>Updates the <a href="../-user-data/index.html">UserData</a> instance used by the <a href="#">SplashViewModel</a></li>
+</ul>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">SplashRepository</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A Repository class used to mediate between Firebase and the rest of the application to know the authentication state of the application in the <a href="#">SplashActivity</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="firebase-auth.html">firebaseAuth</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseAuth</span><span class="symbol">: </span><span class="identifier">FirebaseAuth</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth">FirebaseAuth</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-database.html">firebaseDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseDatabase</span><span class="symbol">: </span><span class="identifier">FirebaseFirestore</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FirebaseFirestore">FirebaseFirestore</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="user.html">user</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">user</span><span class="symbol">: </span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a></code>
+<p>The <a href="../-user-data/index.html">UserData</a> instance used in the methods of the class</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="users-ref.html">usersRef</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">usersRef</span><span class="symbol">: </span><span class="identifier">CollectionReference</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/CollectionReference">CollectionReference</a> referencing the collection of users in the Firebase database</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-user-to-live-data.html">addUserToLiveData</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addUserToLiveData</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.SplashRepository$addUserToLiveData(kotlin.String)/uid">uid</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+linked to the user whose uid corresponds to the given string and return the <a href="../-user-data/index.html">UserData</a> instance created from the document retrieved.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="check-if-user-is-authenticated-in-firebase.html">checkIfUserIsAuthenticatedInFirebase</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">checkIfUserIsAuthenticatedInFirebase</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Checks if the current user of the application is authenticated in Firebase</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

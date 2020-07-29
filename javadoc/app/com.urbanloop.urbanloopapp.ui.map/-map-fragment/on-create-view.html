@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MapFragment.onCreateView - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.map</a>&nbsp;/&nbsp;<a href="index.html">MapFragment</a>&nbsp;/&nbsp;<a href="./on-create-view.html">onCreateView</a><br/>
+<br/>
+<h1>onCreateView</h1>
+<a name="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)"></a>
+<code><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#oncreateview">onCreateView</a> overridden to instantiate the user interface view</p>
+<p>This method initializes the fragment by doing the following :</p>
+<ul><li>Set the action bar Title</li>
+<li>Inflate the view using <a href="https://developer.android.com/topic/libraries/data-binding">Data Binding</a></li>
+<li>Enable the OptionsMenu with the <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#sethasoptionsmenu">setHasOptionsMenu</a> method</li>
+<li>Initialize the <a href="../-map-view-model/index.html">MapViewModel</a> instance with <a href="init-view-model.html">initViewModel</a></li>
+<li>Initialize the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth">FirebaseAuth</a> instance</li>
+<li>Set up the UI listeners with : <a href="on-join-station-button-clicked.html">onJoinStationButtonClicked</a></li>
+</ul>
+</BODY>
+</HTML>

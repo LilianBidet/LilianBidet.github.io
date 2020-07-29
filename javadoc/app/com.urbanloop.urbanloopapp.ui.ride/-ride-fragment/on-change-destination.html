@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RideFragment.onChangeDestination - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.ride</a>&nbsp;/&nbsp;<a href="index.html">RideFragment</a>&nbsp;/&nbsp;<a href="./on-change-destination.html">onChangeDestination</a><br/>
+<br/>
+<h1>onChangeDestination</h1>
+<a name="com.urbanloop.urbanloopapp.ui.ride.RideFragment$onChangeDestination()"></a>
+<code><span class="keyword">private</span> <span class="keyword">fun </span><span class="identifier">onChangeDestination</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Listen to the button allowing to change the current destination.</p>
+<p>This method checks if the user is signed in to the application and if the number of authorized changes remaining is higher than 0.
+If these conditions are not met, a <a href="https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar">Snackbar</a> is displayed to warn the user.
+If they are, it builds an <a href="https://developer.android.com/reference/kotlin/android/app/AlertDialog">AlertDialog</a> asking the user to enter a new destination among a provided list.
+This list is adapted according to data retrieved from the database and stored in the <a href="../-ride-view-model/index.html">RideViewModel</a> (see <a href="on-start.html">onStart</a> method) to show the current destination at first position.
+Then :</p>
+<p>If the user clicks on the "OK" button, it does the following :</p>
+<ul><li>Call <a href="../-ride-view-model/on-changed-destination-confirmed.html">RideViewModel.onChangedDestinationConfirmed</a></li>
+<li>Get user data from the Firebase database with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#get">get</a> method.</li>
+<li>Make a <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap">Bitmap</a> from it with the <a href="../../com.urbanloop.urbanloopapp.utils/text-to-image-encode.html">textToImageEncode</a> method.</li>
+<li>Upload it to the Firebase storage with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/StorageReference#putbytes">putBytes</a> method.</li>
+</ul>
+<p>If the user clicks on the "Cancel" button, it cancels the dialog.</p>
+<p>See <a href="https://firebase.google.com/docs/storage/android/upload-files?authuser=1#upload_from_data_in_memory">Upload from data in memory</a> for more information.</p>
+</BODY>
+</HTML>

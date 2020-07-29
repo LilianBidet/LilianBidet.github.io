@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ProfileViewModel.increaseBalance - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.profile</a>&nbsp;/&nbsp;<a href="index.html">ProfileViewModel</a>&nbsp;/&nbsp;<a href="./increase-balance.html">increaseBalance</a><br/>
+<br/>
+<h1>increaseBalance</h1>
+<a name="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$increaseBalance(com.google.firebase.auth.FirebaseUser)"></a>
+<code><span class="keyword">fun </span><span class="identifier">increaseBalance</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$increaseBalance(com.google.firebase.auth.FirebaseUser)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the balance for the provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a>
+in the Firebase database</p>
+<p>This method calls <a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/get-user-data-reference-from-user.html">FirebaseRepository.getUserDataReferenceFromUser</a> with the provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a>
+and updates the corresponding document in the Firebase database with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#update_1">update</a> method.</p>
+<p>The balance is increased by 10 here.</p>
+<h3>Parameters</h3>
+<p><a name="user"></a>
+<code>user</code> - The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a>
+of whom it updates data.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TabStationsFragment.goToStation - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.urbanloop</a>&nbsp;/&nbsp;<a href="index.html">TabStationsFragment</a>&nbsp;/&nbsp;<a href="./go-to-station.html">goToStation</a><br/>
+<br/>
+<h1>goToStation</h1>
+<a name="com.urbanloop.urbanloopapp.ui.urbanloop.TabStationsFragment$goToStation(com.google.firebase.firestore.DocumentSnapshot)"></a>
+<code><span class="keyword">private</span> <span class="keyword">fun </span><span class="identifier">goToStation</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabStationsFragment$goToStation(com.google.firebase.firestore.DocumentSnapshot)/documentSnapshot">documentSnapshot</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Get a ticket for the selected station and navigates to the <a href="../../com.urbanloop.urbanloopapp.ui.ticket/-ticket-fragment/index.html">TicketFragment</a> when it's done.</p>
+<p>This method does the following :</p>
+<ul><li>Update the Firebase database with the new destination and capsule type with <a href="../-tab-stations-view-model/update-firebase-current-destination.html">TabStationsViewModel.updateFirebaseCurrentDestination</a> and <a href="../-tab-stations-view-model/update-firebase-current-capsule-type.html">TabStationsViewModel.updateFirebaseCurrentCapsuleType</a>.</li>
+<li>Add a new document corresponding to the new ticket in the Firebase database with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/CollectionReference#add">add</a> method.</li>
+<li>Add a new file in the Firebase storage that stores the QR code with the putBytes(https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/StorageReference#putbytes) method.</li>
+<li>Navigate to the <a href="../../com.urbanloop.urbanloopapp.ui.ticket/-ticket-fragment/index.html">TicketFragment</a> with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/StorageReference#putbytes">navigate</a></li>
+</ul>
+<h3>Parameters</h3>
+<p><a name="documentSnapshot"></a>
+<code>documentSnapshot</code> - The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentSnapshot">DocumentSnapshot</a> which corresponds to the station item</p>
+</BODY>
+</HTML>

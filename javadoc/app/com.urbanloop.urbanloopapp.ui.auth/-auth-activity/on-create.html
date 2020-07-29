@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AuthActivity.onCreate - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.auth</a>&nbsp;/&nbsp;<a href="index.html">AuthActivity</a>&nbsp;/&nbsp;<a href="./on-create.html">onCreate</a><br/>
+<br/>
+<h1>onCreate</h1>
+<a name="com.urbanloop.urbanloopapp.ui.auth.AuthActivity$onCreate(android.os.Bundle)"></a>
+<code><span class="keyword">protected</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.auth.AuthActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/android/app/Activity#oncreate_1">onCreate</a> method overridden to perform the startup logic of the activity</p>
+<p>This method initializes the activity by doing the following :</p>
+<ul><li>Inflate the activity's UI with <a href="https://developer.android.com/reference/kotlin/android/app/Activity#setcontentview">setContentView</a></li>
+<li>Initialize the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth">FirebaseAuth</a> instance</li>
+<li>Initialize the <a href="../-auth-view-model/index.html">AuthViewModel</a> instance with the <a href="init-auth-view-model.html">initAuthViewModel</a> method</li>
+<li>Initialize the buttons behaviors with <a href="init-email-sign-in-button.html">initEmailSignInButton</a> and <a href="init-google-sign-in-button.html">initGoogleSignInButton</a></li>
+<li>Initialize the <a href="https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInClient">GoogleSignInClient</a> instance with the <a href="init-google-sign-in-client.html">initGoogleSignInClient</a> method</li>
+</ul>
+</BODY>
+</HTML>

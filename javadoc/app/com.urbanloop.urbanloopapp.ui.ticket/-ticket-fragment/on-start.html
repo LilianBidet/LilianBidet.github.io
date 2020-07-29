@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TicketFragment.onStart - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.ticket</a>&nbsp;/&nbsp;<a href="index.html">TicketFragment</a>&nbsp;/&nbsp;<a href="./on-start.html">onStart</a><br/>
+<br/>
+<h1>onStart</h1>
+<a name="com.urbanloop.urbanloopapp.ui.ticket.TicketFragment$onStart()"></a>
+<code><span class="keyword">fun </span><span class="identifier">onStart</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#onstart">onStart</a> method overridden
+to <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#get">get</a>
+a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+referencing the user's data from the Firebase database.</p>
+<p>This method gets a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+referencing the user's data from the Firebase database and updates the ticket <a href="../-ticket-view-model/index.html">TicketViewModel</a> data according to it with the <a href="../-ticket-view-model/update-ticket-information.html">TicketViewModel.updateTicketInformation</a> method.
+It also adapt the current capsule type icon displayed on the screen according to the <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance retrieved from the Firebase database.</p>
+</BODY>
+</HTML>

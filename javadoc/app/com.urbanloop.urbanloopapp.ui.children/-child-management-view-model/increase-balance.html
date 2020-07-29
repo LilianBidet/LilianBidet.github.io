@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChildManagementViewModel.increaseBalance - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.children</a>&nbsp;/&nbsp;<a href="index.html">ChildManagementViewModel</a>&nbsp;/&nbsp;<a href="./increase-balance.html">increaseBalance</a><br/>
+<br/>
+<h1>increaseBalance</h1>
+<a name="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$increaseBalance(kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="identifier">increaseBalance</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$increaseBalance(kotlin.String)/userID">userID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Increase the balance of a user corresponding to the provided user ID in the Firebase database</p>
+<p>This method calls <a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/get-user-data-reference-from-i-d.html">FirebaseRepository.getUserDataReferenceFromID</a>
+and updates the corresponding document in the Firebase database with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#update_1">update</a> method.</p>
+<p>The balance is increased by 10 here.</p>
+<h3>Parameters</h3>
+<p><a name="userID"></a>
+<code>userID</code> - The uid of the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> of whom it increases the balance.</p>
+</BODY>
+</HTML>

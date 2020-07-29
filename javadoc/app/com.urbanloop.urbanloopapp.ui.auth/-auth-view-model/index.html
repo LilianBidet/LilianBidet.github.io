@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AuthViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.auth</a>&nbsp;/&nbsp;<a href="./index.html">AuthViewModel</a><br/>
+<br/>
+<h1>AuthViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">AuthViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-auth-activity/index.html">AuthActivity</a> data</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AuthViewModel</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.auth.AuthViewModel$<init>(com.urbanloop.urbanloopapp.data.AuthRepository)/authRepository">authRepository</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-auth-repository/index.html"><span class="identifier">AuthRepository</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-auth-activity/index.html">AuthActivity</a> data</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="auth-repository.html">authRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">authRepository</span><span class="symbol">: </span><a href="../../com.urbanloop.urbanloopapp.data/-auth-repository/index.html"><span class="identifier">AuthRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="authenticated-user-live-data.html">authenticatedUserLiveData</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">authenticatedUserLiveData</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="created-user-live-data.html">createdUserLiveData</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">createdUserLiveData</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-user.html">createUser</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createUser</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.auth.AuthViewModel$createUser(com.urbanloop.urbanloopapp.data.UserData)/authenticatedUser">authenticatedUser</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Calls <a href="../../com.urbanloop.urbanloopapp.data/-auth-repository/create-user-in-firebase-database-if-not-exists.html">AuthRepository.createUserInFirebaseDatabaseIfNotExists</a> with the provided <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance
+and stores the result in <a href="created-user-live-data.html">createdUserLiveData</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="sign-in-with-email.html">signInWithEmail</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">signInWithEmail</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.auth.AuthViewModel$signInWithEmail(kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.auth.AuthViewModel$signInWithEmail(kotlin.String, kotlin.String)/password">password</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Calls <a href="../../com.urbanloop.urbanloopapp.data/-auth-repository/firebase-sign-in-with-email.html">AuthRepository.firebaseSignInWithEmail</a> with the provided email and password and stores the result in <a href="authenticated-user-live-data.html">authenticatedUserLiveData</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="sign-in-with-google.html">signInWithGoogle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">signInWithGoogle</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.auth.AuthViewModel$signInWithGoogle(com.google.firebase.auth.AuthCredential)/googleAuthCredential">googleAuthCredential</span><span class="symbol">:</span>&nbsp;<span class="identifier">AuthCredential</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Calls <a href="../../com.urbanloop.urbanloopapp.data/-auth-repository/firebase-sign-in-with-google.html">AuthRepository.firebaseSignInWithGoogle</a>
+with the provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/AuthCredential">AuthCredential</a>
+and stores the result in <a href="authenticated-user-live-data.html">authenticatedUserLiveData</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

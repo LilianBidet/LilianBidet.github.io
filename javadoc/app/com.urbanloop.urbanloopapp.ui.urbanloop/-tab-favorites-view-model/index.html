@@ -1,0 +1,228 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TabFavoritesViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.urbanloop</a>&nbsp;/&nbsp;<a href="./index.html">TabFavoritesViewModel</a><br/>
+<br/>
+<h1>TabFavoritesViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">TabFavoritesViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-tab-favorites-fragment/index.html">TabFavoritesFragment</a> data</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TabFavoritesViewModel</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$<init>(com.urbanloop.urbanloopapp.data.FirebaseRepository)/firebaseRepository">firebaseRepository</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-tab-favorites-fragment/index.html">TabFavoritesFragment</a> data</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="_allowed-destinations.html">_allowedDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_allowedDestinations</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_current-capsule-type.html">_currentCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_currentCapsuleType</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_current-favorite-destinations.html">_currentFavoriteDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_currentFavoriteDestinations</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_is-current-user-child.html">_isCurrentUserChild</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_isCurrentUserChild</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="allowed-destinations.html">allowedDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">allowedDestinations</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-capsule-type.html">currentCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">currentCapsuleType</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-favorite-destinations.html">currentFavoriteDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">currentFavoriteDestinations</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-repository.html">firebaseRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseRepository</span><span class="symbol">: </span><a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-current-user-child.html">isCurrentUserChild</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isCurrentUserChild</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-ticket-reference-to-user-in-firebase.html">addTicketReferenceToUserInFirebase</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addTicketReferenceToUserInFirebase</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$addTicketReferenceToUserInFirebase(com.google.firebase.auth.FirebaseUser, kotlin.String)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$addTicketReferenceToUserInFirebase(com.google.firebase.auth.FirebaseUser, kotlin.String)/ticketID">ticketID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="add-to-firebase-current-user-favorite-destinations.html">addToFirebaseCurrentUserFavoriteDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addToFirebaseCurrentUserFavoriteDestinations</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$addToFirebaseCurrentUserFavoriteDestinations(com.google.firebase.auth.FirebaseUser, kotlin.String)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$addToFirebaseCurrentUserFavoriteDestinations(com.google.firebase.auth.FirebaseUser, kotlin.String)/stationID">stationID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Add a station to the current favorite destinations of a provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-radio-button-clicked.html">onRadioButtonClicked</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRadioButtonClicked</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$onRadioButtonClicked(android.view.View)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Listen to the radio buttons' states to update data accordingly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-from-firebase-current-user-favorite-destinations.html">removeFromFirebaseCurrentUserFavoriteDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeFromFirebaseCurrentUserFavoriteDestinations</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$removeFromFirebaseCurrentUserFavoriteDestinations(com.google.firebase.auth.FirebaseUser, kotlin.String)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$removeFromFirebaseCurrentUserFavoriteDestinations(com.google.firebase.auth.FirebaseUser, kotlin.String)/stationID">stationID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Remove a station from the current favorite destinations of a provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="reset-firebase-destination-changes-remaining.html">resetFirebaseDestinationChangesRemaining</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resetFirebaseDestinationChangesRemaining</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$resetFirebaseDestinationChangesRemaining(com.google.firebase.auth.FirebaseUser)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Resets the changes of destination remaining for a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> in the Firebase database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-allowed-destinations-with-user-data.html">updateAllowedDestinationsWithUserData</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateAllowedDestinationsWithUserData</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateAllowedDestinationsWithUserData(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="allowed-destinations.html">allowedDestinations</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-current-capsule-type-value.html">updateCurrentCapsuleTypeValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateCurrentCapsuleTypeValue</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateCurrentCapsuleTypeValue(kotlin.String)/capsuleType">capsuleType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="current-capsule-type.html">currentCapsuleType</a> value with a string</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-current-capsule-type-with-user-data.html">updateCurrentCapsuleTypeWithUserData</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateCurrentCapsuleTypeWithUserData</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateCurrentCapsuleTypeWithUserData(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="current-capsule-type.html">currentCapsuleType</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-favorite-destinations-value.html">updateFavoriteDestinationsValue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateFavoriteDestinationsValue</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateFavoriteDestinationsValue(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="current-favorite-destinations.html">currentFavoriteDestinations</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-firebase-current-capsule-type.html">updateFirebaseCurrentCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateFirebaseCurrentCapsuleType</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateFirebaseCurrentCapsuleType(com.google.firebase.auth.FirebaseUser)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the current capsule type of a provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-firebase-current-destination.html">updateFirebaseCurrentDestination</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateFirebaseCurrentDestination</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateFirebaseCurrentDestination(com.google.firebase.auth.FirebaseUser, kotlin.String)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateFirebaseCurrentDestination(com.google.firebase.auth.FirebaseUser, kotlin.String)/destination">destination</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the current destination of a provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> in the Firebase database with a string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-firebase-current-user-favorite-destinations.html">updateFirebaseCurrentUserFavoriteDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateFirebaseCurrentUserFavoriteDestinations</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateFirebaseCurrentUserFavoriteDestinations(com.google.firebase.auth.FirebaseUser, com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateFirebaseCurrentUserFavoriteDestinations(com.google.firebase.auth.FirebaseUser, com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean)/documentSnapshot">documentSnapshot</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateFirebaseCurrentUserFavoriteDestinations(com.google.firebase.auth.FirebaseUser, com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean)/isChecked">isChecked</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the current favorite destinations of a provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> according to a boolean representing the state of the "favorite" button</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-is-current-user-child.html">updateIsCurrentUserChild</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateIsCurrentUserChild</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabFavoritesViewModel$updateIsCurrentUserChild(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="is-current-user-child.html">isCurrentUserChild</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

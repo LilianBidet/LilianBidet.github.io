@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RegisterChildRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.data</a>&nbsp;/&nbsp;<a href="./index.html">RegisterChildRepository</a><br/>
+<br/>
+<h1>RegisterChildRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">RegisterChildRepository</span></code>
+<p>A Repository class used to mediate between Firebase and the rest of the application to authenticate child users in the <a href="#">RegisterChildActivity</a></p>
+<p>This class can perform the Firebase authentication process for the creation of children accounts with the methods below :</p>
+<ul><li>Google authentication</li>
+<li>E-mail/password authentication</li>
+</ul>
+<p>It also stores user data into the Firebase database linked to the application</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RegisterChildRepository</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A Repository class used to mediate between Firebase and the rest of the application to authenticate child users in the <a href="#">RegisterChildActivity</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="firebase-auth.html">firebaseAuth</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseAuth</span><span class="symbol">: </span><span class="identifier">FirebaseAuth</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth">FirebaseAuth</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-database.html">firebaseDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseDatabase</span><span class="symbol">: </span><span class="identifier">FirebaseFirestore</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FirebaseFirestore">FirebaseFirestore</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="users-ref.html">usersRef</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">usersRef</span><span class="symbol">: </span><span class="identifier">CollectionReference</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/CollectionReference">CollectionReference</a> referencing the collection of users in the Firebase database</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-child-user-in-firebase-database-if-not-exists.html">createChildUserInFirebaseDatabaseIfNotExists</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createChildUserInFirebaseDatabaseIfNotExists</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$createChildUserInFirebaseDatabaseIfNotExists(com.urbanloop.urbanloopapp.data.UserData, kotlin.String)/authenticatedUser">authenticatedUser</span><span class="symbol">:</span>&nbsp;<a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$createChildUserInFirebaseDatabaseIfNotExists(com.urbanloop.urbanloopapp.data.UserData, kotlin.String)/nameInput">nameInput</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Stores user data from the given <a href="../-user-data/index.html">UserData</a> instance in the Firebase database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-sign-in-child-with-email.html">firebaseSignInChildWithEmail</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">firebaseSignInChildWithEmail</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithEmail(kotlin.String, kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithEmail(kotlin.String, kotlin.String, kotlin.String)/password">password</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithEmail(kotlin.String, kotlin.String, kotlin.String)/parentUID">parentUID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Signs in a child user to the application with E-mail/password credentials</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-sign-in-child-with-google.html">firebaseSignInChildWithGoogle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">firebaseSignInChildWithGoogle</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithGoogle(com.google.firebase.auth.AuthCredential, kotlin.String)/googleAuthCredential">googleAuthCredential</span><span class="symbol">:</span>&nbsp;<span class="identifier">AuthCredential</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithGoogle(com.google.firebase.auth.AuthCredential, kotlin.String)/parentUID">parentUID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Signs in a child user to the application with Google authentication credentials</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

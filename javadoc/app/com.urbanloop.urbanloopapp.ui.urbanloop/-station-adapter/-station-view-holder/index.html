@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StationAdapter.StationViewHolder - app</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">app</a>&nbsp;/&nbsp;<a href="../../index.html">com.urbanloop.urbanloopapp.ui.urbanloop</a>&nbsp;/&nbsp;<a href="../index.html">StationAdapter</a>&nbsp;/&nbsp;<a href="./index.html">StationViewHolder</a><br/>
+<br/>
+<h1>StationViewHolder</h1>
+<code><span class="keyword">class </span><span class="identifier">StationViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder#ViewHolder(android.view.View)">ViewHolder</a> class
+used to describe the item view.</p>
+<h3>Parameters</h3>
+<p><a name="itemView"></a>
+<code>itemView</code> - The <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a> to describe</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">StationViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter.StationViewHolder$<init>(android.view.View)/itemView">itemView</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder#ViewHolder(android.view.View)">ViewHolder</a> class
+used to describe the item view.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="station-favorite-button-view.html">stationFavoriteButtonView</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stationFavoriteButtonView</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/CheckBox.html"><span class="identifier">CheckBox</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="station-go-button-view.html">stationGoButtonView</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stationGoButtonView</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/Button.html"><span class="identifier">Button</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="station-name-view.html">stationNameView</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stationNameView</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/TextView.html"><span class="identifier">TextView</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="bind.html">bind</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter.StationViewHolder$bind(kotlin.collections.List((kotlin.String)), com.urbanloop.urbanloopapp.data.StationData, kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)), com.google.firebase.firestore.DocumentSnapshot)/currentFavoriteDestinations">currentFavoriteDestinations</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter.StationViewHolder$bind(kotlin.collections.List((kotlin.String)), com.urbanloop.urbanloopapp.data.StationData, kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)), com.google.firebase.firestore.DocumentSnapshot)/stationData">stationData</span><span class="symbol">:</span>&nbsp;<a href="../../../com.urbanloop.urbanloopapp.data/-station-data/index.html"><span class="identifier">StationData</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter.StationViewHolder$bind(kotlin.collections.List((kotlin.String)), com.urbanloop.urbanloopapp.data.StationData, kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)), com.google.firebase.firestore.DocumentSnapshot)/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">station</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter.StationViewHolder$bind(kotlin.collections.List((kotlin.String)), com.urbanloop.urbanloopapp.data.StationData, kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)), com.google.firebase.firestore.DocumentSnapshot)/favoriteListener">favoriteListener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">station</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">,</span>&nbsp;<span class="identifier">isChecked</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter.StationViewHolder$bind(kotlin.collections.List((kotlin.String)), com.urbanloop.urbanloopapp.data.StationData, kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)), com.google.firebase.firestore.DocumentSnapshot)/snapshot">snapshot</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Binds data to the item view</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

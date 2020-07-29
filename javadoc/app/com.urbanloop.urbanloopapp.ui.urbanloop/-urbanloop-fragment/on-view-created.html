@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UrbanloopFragment.onViewCreated - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.urbanloop</a>&nbsp;/&nbsp;<a href="index.html">UrbanloopFragment</a>&nbsp;/&nbsp;<a href="./on-view-created.html">onViewCreated</a><br/>
+<br/>
+<h1>onViewCreated</h1>
+<a name="com.urbanloop.urbanloopapp.ui.urbanloop.UrbanloopFragment$onViewCreated(android.view.View, android.os.Bundle)"></a>
+<code><span class="keyword">fun </span><span class="identifier">onViewCreated</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.UrbanloopFragment$onViewCreated(android.view.View, android.os.Bundle)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.UrbanloopFragment$onViewCreated(android.view.View, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/android/app/Fragment#onviewcreated">onViewCreated</a> method overridden
+to set up the <a href="https://developer.android.com/reference/kotlin/androidx/viewpager/widget/ViewPager">ViewPager</a>.</p>
+<p>To do so, this method does the following :</p>
+<ul><li>Instantiate the <a href="../-stations-pager-adapter/index.html">StationsPagerAdapter</a></li>
+<li>Set up the <a href="https://developer.android.com/reference/kotlin/androidx/viewpager/widget/ViewPager">ViewPager</a> and its adapter.</li>
+<li>Listen to the tab changes with the <a href="https://developer.android.com/reference/kotlin/androidx/viewpager/widget/ViewPager#addonpagechangelistener">addOnPageChangeListener</a></li>
+<li>Get the favorite destinations of the user from the Firebase database with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#get">get</a> method
+to know if the view pager must initialize on the favorite tab.</li>
+</ul>
+<p>See <a href="https://developer.android.com/guide/navigation/navigation-swipe-view">Create swipe views with tabs using ViewPager</a> for more information</p>
+</BODY>
+</HTML>

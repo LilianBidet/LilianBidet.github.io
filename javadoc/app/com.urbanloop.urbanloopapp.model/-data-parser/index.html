@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DataParser - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.model</a>&nbsp;/&nbsp;<a href="./index.html">DataParser</a><br/>
+<br/>
+<h1>DataParser</h1>
+<code><span class="keyword">class </span><span class="identifier">DataParser</span></code>
+<p>A class used to parse data</p>
+<p>This class can :</p>
+<ul><li>Parse a JSON object decode polyline points</li>
+<li>Decode a string representing a polyline to return the polyline points</li>
+</ul>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">DataParser</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A class used to parse data</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="decode-poly.html">decodePoly</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">decodePoly</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.model.DataParser$decodePoly(kotlin.String)/encoded">encoded</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">LatLng</span><span class="symbol">&gt;</span></code>
+<p>Decodes polyline points</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="parse.html">parse</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">parse</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.model.DataParser$parse(org.json.JSONObject)/jObject">jObject</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Receives a JSONObject and returns a list of lists containing latitude and longitude</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

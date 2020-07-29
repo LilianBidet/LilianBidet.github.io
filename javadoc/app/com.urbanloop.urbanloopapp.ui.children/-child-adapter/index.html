@@ -1,0 +1,99 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChildAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.children</a>&nbsp;/&nbsp;<a href="./index.html">ChildAdapter</a><br/>
+<br/>
+<h1>ChildAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">ChildAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FirestoreRecyclerAdapter</span><span class="symbol">&lt;</span><a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">,</span>&nbsp;<a href="-child-view-holder/index.html"><span class="identifier">ChildViewHolder</span></a><span class="symbol">&gt;</span></code>
+<p>A <a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-the-firestorerecycleradapter">FirestoreRecyclerAdapter</a> class
+to populate the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerView</a>
+in charge of showing the children items in the <a href="../-children-accounts-fragment/index.html">ChildrenAccountsFragment</a></p>
+<p>This class handles the population of the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerView</a>
+in charge of showing the children items in the <a href="../-children-accounts-fragment/index.html">ChildrenAccountsFragment</a>.
+To be able to do so, it contains a <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder#ViewHolder(android.view.View)">ViewHolder</a> class
+and methods associated to it that populate the final view.</p>
+<p>See these links for more information :</p>
+<ul><li><a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-firebaseui-to-populate-a-recyclerview">Using the FirestoreRecyclerAdapter</a></li>
+<li><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.Adapter">Adapter</a></li>
+</ul>
+<h3>Parameters</h3>
+<p><a name="options"></a>
+<code>options</code> - The <a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-the-firestorerecycleradapter">FirestoreRecyclerOptions</a> for the adapter</p>
+<p><a name="listener"></a>
+<code>listener</code> - A callback used to listen to the button view of a child item in the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerView</a></p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-child-view-holder/index.html">ChildViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ChildViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder#ViewHolder(android.view.View)">ViewHolder</a> class
+used to describe the item view.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ChildAdapter</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildAdapter$<init>(com.firebase.ui.firestore.FirestoreRecyclerOptions((com.urbanloop.urbanloopapp.data.UserData)), kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)))/options">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirestoreRecyclerOptions</span><span class="symbol">&lt;</span><a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildAdapter$<init>(com.firebase.ui.firestore.FirestoreRecyclerOptions((com.urbanloop.urbanloopapp.data.UserData)), kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">child</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-the-firestorerecycleradapter">FirestoreRecyclerAdapter</a> class
+to populate the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerView</a>
+in charge of showing the children items in the <a href="../-children-accounts-fragment/index.html">ChildrenAccountsFragment</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="listener.html">listener</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">listener</span><span class="symbol">: </span><span class="symbol">(</span><span class="identifier">child</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>A callback used to listen to the button view of a child item in the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerView</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildAdapter$onBindViewHolder(com.urbanloop.urbanloopapp.ui.children.ChildAdapter.ChildViewHolder, kotlin.Int, com.urbanloop.urbanloopapp.data.UserData)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="-child-view-holder/index.html"><span class="identifier">ChildViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildAdapter$onBindViewHolder(com.urbanloop.urbanloopapp.ui.children.ChildAdapter.ChildViewHolder, kotlin.Int, com.urbanloop.urbanloopapp.data.UserData)/p1">p1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildAdapter$onBindViewHolder(com.urbanloop.urbanloopapp.ui.children.ChildAdapter.ChildViewHolder, kotlin.Int, com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.Adapter#onbindviewholder">onBindViewHolder</a>
+overridden to display the data at the specified position</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-child-view-holder/index.html"><span class="identifier">ChildViewHolder</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.Adapter#oncreateviewholder">onCreateViewHolder</a>
+overridden to use the <a href="-child-view-holder/index.html">ChildViewHolder</a> to represent the item.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RegisterChildRepository.createChildUserInFirebaseDatabaseIfNotExists - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.data</a>&nbsp;/&nbsp;<a href="index.html">RegisterChildRepository</a>&nbsp;/&nbsp;<a href="./create-child-user-in-firebase-database-if-not-exists.html">createChildUserInFirebaseDatabaseIfNotExists</a><br/>
+<br/>
+<h1>createChildUserInFirebaseDatabaseIfNotExists</h1>
+<a name="com.urbanloop.urbanloopapp.data.RegisterChildRepository$createChildUserInFirebaseDatabaseIfNotExists(com.urbanloop.urbanloopapp.data.UserData, kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="identifier">createChildUserInFirebaseDatabaseIfNotExists</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$createChildUserInFirebaseDatabaseIfNotExists(com.urbanloop.urbanloopapp.data.UserData, kotlin.String)/authenticatedUser">authenticatedUser</span><span class="symbol">:</span>&nbsp;<a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$createChildUserInFirebaseDatabaseIfNotExists(com.urbanloop.urbanloopapp.data.UserData, kotlin.String)/nameInput">nameInput</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Stores user data from the given <a href="../-user-data/index.html">UserData</a> instance in the Firebase database.</p>
+<p>This method gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+of the given user by launching a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#get">get</a> task.
+If no documents exists for this <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>,
+it creates a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FirebaseFirestore#document">document</a> by launching a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#set">set</a> task.
+Then, it updates the name field if necessary with an <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#update_1">update</a> task.</p>
+<h3>Parameters</h3>
+<p><a name="authenticatedUser"></a>
+<code>authenticatedUser</code> - the child <a href="../-user-data/index.html">UserData</a> instance used to create the document</p>
+<p><a name="nameInput"></a>
+<code>nameInput</code> - the name used for the creation of the child account</p>
+<p><strong>Return</strong><br/>
+the <a href="../-user-data/index.html">UserData</a> instance of the child user for whom a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FirebaseFirestore#document">document</a> has just be stored in the Firebase database</p>
+</BODY>
+</HTML>

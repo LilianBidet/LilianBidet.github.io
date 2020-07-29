@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RegisterChildRepository.firebaseSignInChildWithEmail - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.data</a>&nbsp;/&nbsp;<a href="index.html">RegisterChildRepository</a>&nbsp;/&nbsp;<a href="./firebase-sign-in-child-with-email.html">firebaseSignInChildWithEmail</a><br/>
+<br/>
+<h1>firebaseSignInChildWithEmail</h1>
+<a name="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithEmail(kotlin.String, kotlin.String, kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="identifier">firebaseSignInChildWithEmail</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithEmail(kotlin.String, kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithEmail(kotlin.String, kotlin.String, kotlin.String)/password">password</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.data.RegisterChildRepository$firebaseSignInChildWithEmail(kotlin.String, kotlin.String, kotlin.String)/parentUID">parentUID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Signs in a child user to the application with E-mail/password credentials</p>
+<p>This method launches the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth.html#createuserwithemailandpassword">createUserWithEmailAndPassword</a> task.
+If the task is successful, it creates a new user account with the given email address and password, signs in the user to the application and creates the <a href="../-user-data/index.html">UserData</a> instance to return.</p>
+<h3>Parameters</h3>
+<p><a name="email"></a>
+<code>email</code> - the email address used to create the child account</p>
+<p><a name="password"></a>
+<code>password</code> - the password used to create the child account</p>
+<p><a name="parentUID"></a>
+<code>parentUID</code> - the uid of the parent <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a></p>
+<p><strong>Return</strong><br/>
+the <a href="../-user-data/index.html">UserData</a> instance of the child user who just signed in, held in a <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/MutableLiveData">MutableLiveData</a> class</p>
+</BODY>
+</HTML>

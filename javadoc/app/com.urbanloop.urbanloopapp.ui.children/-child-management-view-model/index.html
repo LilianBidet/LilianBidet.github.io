@@ -1,0 +1,208 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChildManagementViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.children</a>&nbsp;/&nbsp;<a href="./index.html">ChildManagementViewModel</a><br/>
+<br/>
+<h1>ChildManagementViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">ChildManagementViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-child-management-fragment/index.html">ChildManagementFragment</a> data</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ChildManagementViewModel</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$<init>(com.urbanloop.urbanloopapp.data.FirebaseRepository)/firebaseRepository">firebaseRepository</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-child-management-fragment/index.html">ChildManagementFragment</a> data</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="_allowed-destinations.html">_allowedDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_allowedDestinations</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_balance.html">_balance</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_balance</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_child-i-d.html">_childID</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_childID</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_child-name.html">_childName</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_childName</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_navigate-to-children-accounts.html">_navigateToChildrenAccounts</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_navigateToChildrenAccounts</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="allowed-destinations.html">allowedDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">allowedDestinations</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="balance.html">balance</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">balance</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="child-i-d.html">childID</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">childID</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="child-name.html">childName</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">childName</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-repository.html">firebaseRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseRepository</span><span class="symbol">: </span><a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="navigate-to-children-accounts.html">navigateToChildrenAccounts</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">navigateToChildrenAccounts</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-to-firebase-current-user-allowed-destinations.html">addToFirebaseCurrentUserAllowedDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addToFirebaseCurrentUserAllowedDestinations</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$addToFirebaseCurrentUserAllowedDestinations(kotlin.String, kotlin.String)/userID">userID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$addToFirebaseCurrentUserAllowedDestinations(kotlin.String, kotlin.String)/destinationName">destinationName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Adds a destination to the allowed destinations of a user who corresponds to the provided user ID in the Firebase database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="done-navigating.html">doneNavigating</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doneNavigating</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Reset the value of <a href="navigate-to-children-accounts.html">navigateToChildrenAccounts</a> when the navigation to the <a href="../-children-accounts-fragment/index.html">ChildrenAccountsFragment</a> is done</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="increase-balance.html">increaseBalance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">increaseBalance</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$increaseBalance(kotlin.String)/userID">userID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Increase the balance of a user corresponding to the provided user ID in the Firebase database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-checkbox-clicked.html">onCheckboxClicked</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCheckboxClicked</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$onCheckboxClicked(android.view.View)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Listen to the checkboxes' states to update the database accordingly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-from-firebase-current-user-allowed-destinations.html">removeFromFirebaseCurrentUserAllowedDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeFromFirebaseCurrentUserAllowedDestinations</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$removeFromFirebaseCurrentUserAllowedDestinations(kotlin.String, kotlin.String)/userID">userID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$removeFromFirebaseCurrentUserAllowedDestinations(kotlin.String, kotlin.String)/destinationName">destinationName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Remove a destination from the allowed destinations of a user who corresponds to the provided user ID in the Firebase database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-allowed-destinations.html">updateAllowedDestinations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateAllowedDestinations</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$updateAllowedDestinations(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="allowed-destinations.html">allowedDestinations</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-balance.html">updateBalance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateBalance</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$updateBalance(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="balance.html">balance</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-child-i-d.html">updateChildID</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateChildID</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$updateChildID(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="child-i-d.html">childID</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-child-name.html">updateChildName</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateChildName</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$updateChildName(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="child-name.html">childName</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

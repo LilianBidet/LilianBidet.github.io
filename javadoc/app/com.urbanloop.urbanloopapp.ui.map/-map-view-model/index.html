@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MapViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.map</a>&nbsp;/&nbsp;<a href="./index.html">MapViewModel</a><br/>
+<br/>
+<h1>MapViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">MapViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-map-fragment/index.html">MapFragment</a> data</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MapViewModel</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapViewModel$<init>(com.urbanloop.urbanloopapp.data.FirebaseRepository)/firebaseRepository">firebaseRepository</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-map-fragment/index.html">MapFragment</a> data</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="_current-capsule-type.html">_currentCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_currentCapsuleType</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_stations-list.html">_stationsList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_stationsList</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../../com.urbanloop.urbanloopapp.data/-station-data/index.html"><span class="identifier">StationData</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_stations-loaded.html">_stationsLoaded</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_stationsLoaded</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-capsule-type.html">currentCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">currentCapsuleType</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-repository.html">firebaseRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseRepository</span><span class="symbol">: </span><a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stations-list.html">stationsList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">stationsList</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../../com.urbanloop.urbanloopapp.data/-station-data/index.html"><span class="identifier">StationData</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stations-loaded.html">stationsLoaded</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">stationsLoaded</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-station.html">addStation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addStation</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapViewModel$addStation(com.urbanloop.urbanloopapp.data.StationData)/station">station</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-station-data/index.html"><span class="identifier">StationData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Adds a <a href="../../com.urbanloop.urbanloopapp.data/-station-data/index.html">StationData</a> to <a href="stations-list.html">stationsList</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="fill-stations-list.html">fillStationsList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fillStationsList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Fills <a href="stations-list.html">stationsList</a> with the UrbanLoop stations information</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-good-station.html">getGoodStation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getGoodStation</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapViewModel$getGoodStation(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.urbanloop.urbanloopapp.data/-station-data/index.html"><span class="identifier">StationData</span></a></code>
+<p>Gets the station currently clicked by the user</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-marker-icon-from-drawable.html">getMarkerIconFromDrawable</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMarkerIconFromDrawable</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapViewModel$getMarkerIconFromDrawable(android.graphics.drawable.Drawable)/drawable">drawable</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html"><span class="identifier">Drawable</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">BitmapDescriptor</span></code>
+<p>Creates an icon from an xml file (or any other <a href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-url.html">getUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUrl</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapViewModel$getUrl(com.google.android.gms.maps.model.LatLng, com.google.android.gms.maps.model.LatLng, kotlin.String, kotlin.String)/origin">origin</span><span class="symbol">:</span>&nbsp;<span class="identifier">LatLng</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapViewModel$getUrl(com.google.android.gms.maps.model.LatLng, com.google.android.gms.maps.model.LatLng, kotlin.String, kotlin.String)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">LatLng</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapViewModel$getUrl(com.google.android.gms.maps.model.LatLng, com.google.android.gms.maps.model.LatLng, kotlin.String, kotlin.String)/directionMode">directionMode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapViewModel$getUrl(com.google.android.gms.maps.model.LatLng, com.google.android.gms.maps.model.LatLng, kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Gets the url of the data file generated by Google Maps API for the itinerary wanted</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="reset-stations-loaded.html">resetStationsLoaded</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resetStationsLoaded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

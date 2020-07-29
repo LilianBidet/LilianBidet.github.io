@@ -1,0 +1,16 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.urbanloop.urbanloopapp
+com.urbanloop.urbanloopapp.data
+com.urbanloop.urbanloopapp.model
+com.urbanloop.urbanloopapp.ui.auth
+com.urbanloop.urbanloopapp.ui.children
+com.urbanloop.urbanloopapp.ui.map
+com.urbanloop.urbanloopapp.ui.profile
+com.urbanloop.urbanloopapp.ui.registerChild
+com.urbanloop.urbanloopapp.ui.ride
+com.urbanloop.urbanloopapp.ui.splash
+com.urbanloop.urbanloopapp.ui.ticket
+com.urbanloop.urbanloopapp.ui.urbanloop
+com.urbanloop.urbanloopapp.utils

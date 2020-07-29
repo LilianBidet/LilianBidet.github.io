@@ -1,0 +1,212 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RegisterChildActivity - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.registerChild</a>&nbsp;/&nbsp;<a href="./index.html">RegisterChildActivity</a><br/>
+<br/>
+<h1>RegisterChildActivity</h1>
+<code><span class="keyword">class </span><span class="identifier">RegisterChildActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span><span class="symbol">, </span><span class="identifier">AuthStateListener</span></code>
+<p>An <a href="https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity">AppCompatActivity</a> class providing an authentication interface to authenticate a child user from a parent account.</p>
+<p>This activity provides an authentication interface to authenticate a child user made up of the following elements :</p>
+<ul><li>A section to describe the process to the current user</li>
+<li>A section to sign in with an e-mail and a password</li>
+<li>A section to sign in with other providers like Google</li>
+</ul>
+<p>To match the <a href="https://developer.android.com/jetpack/guide#recommended-app-arch">recommended app architecture</a>,
+this class interacts with the <a href="../-register-child-view-model/index.html">RegisterChildViewModel</a> to handle it's data logic.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RegisterChildActivity</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>An <a href="https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity">AppCompatActivity</a> class providing an authentication interface to authenticate a child user from a parent account.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="auth.html">auth</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">auth</span><span class="symbol">: </span><span class="identifier">FirebaseAuth</span></code>
+<p>A <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth">FirebaseAuth</a> instance to interact with the Firebase Authentication SDK</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="google-sign-in-client.html">googleSignInClient</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">googleSignInClient</span><span class="symbol">: </span><span class="identifier">GoogleSignInClient</span></code>
+<p>A <a href="https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInClient">GoogleSignInClient</a> instance to interact with the Google Sign In API</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="register-child-view-model.html">registerChildViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">registerChildViewModel</span><span class="symbol">: </span><a href="../-register-child-view-model/index.html"><span class="identifier">RegisterChildViewModel</span></a></code>
+<p>The <a href="../-register-child-view-model/index.html">RegisterChildViewModel</a> instance associated with the activity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-new-user.html">createNewUser</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createNewUser</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$createNewUser(com.urbanloop.urbanloopapp.data.UserData)/authenticatedUser">authenticatedUser</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Creates a user in the Firebase Database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-google-auth-credential.html">getGoogleAuthCredential</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getGoogleAuthCredential</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$getGoogleAuthCredential(com.google.android.gms.auth.api.signin.GoogleSignInAccount)/googleSignInAccount">googleSignInAccount</span><span class="symbol">:</span>&nbsp;<span class="identifier">GoogleSignInAccount</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/AuthCredential">AuthCredential</a>
+from a provided <a href="https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInAccount">GoogleSignInAccount</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="go-to-auth-in-activity.html">goToAuthInActivity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">goToAuthInActivity</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Goes to the the <a href="../../com.urbanloop.urbanloopapp.ui.auth/-auth-activity/index.html">AuthActivity</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="go-to-main-activity.html">goToMainActivity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">goToMainActivity</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$goToMainActivity(com.urbanloop.urbanloopapp.data.UserData)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Goes to the <a href="../../com.urbanloop.urbanloopapp/-main-activity/index.html">MainActivity</a> and transmits a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance to it</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="init-email-sign-in-button.html">initEmailSignInButton</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">initEmailSignInButton</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Initializes the email_sign_in_button behavior</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="init-google-sign-in-button.html">initGoogleSignInButton</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">initGoogleSignInButton</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Initializes the google_sign_in_button behavior</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="init-google-sign-in-client.html">initGoogleSignInClient</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">initGoogleSignInClient</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Initializes the <a href="https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInClient">GoogleSignInClient</a> instance used by the activity</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="init-register-child-view-model.html">initRegisterChildViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">initRegisterChildViewModel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Initializes the <a href="../-register-child-view-model/index.html">RegisterChildViewModel</a> instance used by the activity</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activity-result.html">onActivityResult</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onActivityResult</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/resultCode">resultCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Intent.html"><span class="identifier">Intent</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/android/app/Activity#onactivityresult">onActivityResult</a> overridden to get the result from the google sign in Intent</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-auth-state-changed.html">onAuthStateChanged</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAuthStateChanged</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$onAuthStateChanged(com.google.firebase.auth.FirebaseAuth)/p0">p0</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseAuth</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth.AuthStateListener#onauthstatechanged">onAuthStateChanged</a> method overridden
+to go to the <a href="../../com.urbanloop.urbanloopapp.ui.auth/-auth-activity/index.html">AuthActivity</a> when the current user signs out.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/android/app/Activity#oncreate_1">onCreate</a> method overridden to perform the startup logic of the activity</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="sign-in-with-email.html">signInWithEmail</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">signInWithEmail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Signs in a user from the email and password entered in the appropriate fields</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="sign-in-with-google.html">signInWithGoogle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">signInWithGoogle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Starts the Google sign in flow</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="sign-in-with-google-auth-credential.html">signInWithGoogleAuthCredential</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">signInWithGoogleAuthCredential</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.registerChild.RegisterChildActivity$signInWithGoogleAuthCredential(com.google.firebase.auth.AuthCredential)/googleAuthCredential">googleAuthCredential</span><span class="symbol">:</span>&nbsp;<span class="identifier">AuthCredential</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Signs in a user from a Google <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/AuthCredential">AuthCredential</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

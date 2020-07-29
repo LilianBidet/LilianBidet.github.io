@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RideViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.ride</a>&nbsp;/&nbsp;<a href="./index.html">RideViewModel</a><br/>
+<br/>
+<h1>RideViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">RideViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-ride-fragment/index.html">RideFragment</a> data</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">RideViewModel</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ride.RideViewModel$<init>(com.urbanloop.urbanloopapp.data.FirebaseRepository)/firebaseRepository">firebaseRepository</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-ride-fragment/index.html">RideFragment</a> data</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="_arrival-time.html">_arrivalTime</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_arrivalTime</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_capsule-type.html">_capsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_capsuleType</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_changes-remaining.html">_changesRemaining</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_changesRemaining</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_destination.html">_destination</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_destination</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_last-station.html">_lastStation</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_lastStation</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_new-destination.html">_newDestination</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">_newDestination</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="arrival-time.html">arrivalTime</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">arrivalTime</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="capsule-type.html">capsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">capsuleType</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="changes-remaining.html">changesRemaining</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">changesRemaining</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destination.html">destination</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">destination</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-repository.html">firebaseRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseRepository</span><span class="symbol">: </span><a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="last-station.html">lastStation</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">lastStation</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="new-destination.html">newDestination</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">newDestination</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="on-changed-destination-confirmed.html">onChangedDestinationConfirmed</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onChangedDestinationConfirmed</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ride.RideViewModel$onChangedDestinationConfirmed(kotlin.String)/newDestinationStation">newDestinationStation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Handles the user dialog validation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-destination-changes-remaining.html">updateDestinationChangesRemaining</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateDestinationChangesRemaining</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ride.RideViewModel$updateDestinationChangesRemaining(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="changes-remaining.html">changesRemaining</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">com.urbanloop.urbanloopapp.data.UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-ride-information.html">updateRideInformation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateRideInformation</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ride.RideViewModel$updateRideInformation(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="destination.html">destination</a> and the <a href="capsule-type.html">capsuleType</a> values with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">com.urbanloop.urbanloopapp.data.UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-view-model-new-destination.html">updateViewModelNewDestination</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateViewModelNewDestination</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ride.RideViewModel$updateViewModelNewDestination(kotlin.String)/newDestinationStation">newDestinationStation</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="new-destination.html">newDestination</a> value with a string</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

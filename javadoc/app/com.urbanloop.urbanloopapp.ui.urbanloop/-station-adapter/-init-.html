@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>StationAdapter.<init> - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.urbanloop</a>&nbsp;/&nbsp;<a href="index.html">StationAdapter</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter$&lt;init&gt;(kotlin.collections.List((kotlin.String)), com.firebase.ui.firestore.FirestoreRecyclerOptions((com.urbanloop.urbanloopapp.data.StationData)), kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)))"></a>
+<code><span class="identifier">StationAdapter</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter$<init>(kotlin.collections.List((kotlin.String)), com.firebase.ui.firestore.FirestoreRecyclerOptions((com.urbanloop.urbanloopapp.data.StationData)), kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)))/currentFavoriteDestinations">currentFavoriteDestinations</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter$<init>(kotlin.collections.List((kotlin.String)), com.firebase.ui.firestore.FirestoreRecyclerOptions((com.urbanloop.urbanloopapp.data.StationData)), kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)))/options">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirestoreRecyclerOptions</span><span class="symbol">&lt;</span><a href="../../com.urbanloop.urbanloopapp.data/-station-data/index.html"><span class="identifier">StationData</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter$<init>(kotlin.collections.List((kotlin.String)), com.firebase.ui.firestore.FirestoreRecyclerOptions((com.urbanloop.urbanloopapp.data.StationData)), kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">station</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.StationAdapter$<init>(kotlin.collections.List((kotlin.String)), com.firebase.ui.firestore.FirestoreRecyclerOptions((com.urbanloop.urbanloopapp.data.StationData)), kotlin.Function1((com.google.firebase.firestore.DocumentSnapshot, kotlin.Unit)), kotlin.Function2((com.google.firebase.firestore.DocumentSnapshot, kotlin.Boolean, kotlin.Unit)))/favoriteListener">favoriteListener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">station</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">,</span>&nbsp;<span class="identifier">isChecked</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-the-firestorerecycleradapter">FirestoreRecyclerAdapter</a> class
+to populate the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerViews</a>
+in charge of showing the stations items in the <a href="../-tab-stations-fragment/index.html">TabStationsFragment</a> and <a href="../-tab-favorites-fragment/index.html">TabFavoritesFragment</a></p>
+<p>This class handles the population of the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerViews</a>
+in charge of showing the stations items in the <a href="../-tab-stations-fragment/index.html">TabStationsFragment</a> and <a href="../-tab-favorites-fragment/index.html">TabFavoritesFragment</a>.
+To be able to do so, it contains a <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.ViewHolder#ViewHolder(android.view.View)">ViewHolder</a> class
+and methods associated to it that populate the final view.</p>
+<p>See these links for more information :</p>
+<ul><li><a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-firebaseui-to-populate-a-recyclerview">Using the FirestoreRecyclerAdapter</a></li>
+<li><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.Adapter">Adapter</a></li>
+</ul>
+<h3>Parameters</h3>
+<p><a name="currentFavoriteDestinations"></a>
+<code>currentFavoriteDestinations</code> - A list of the current favorites destinations of the current user</p>
+<p><a name="options"></a>
+<code>options</code> - The <a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-the-firestorerecycleradapter">FirestoreRecyclerOptions</a> for the adapter</p>
+<p><a name="listener"></a>
+<code>listener</code> - A callback used to listen to the "Go" button view of a station item in the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerView</a></p>
+<p><a name="favoriteListener"></a>
+<code>favoriteListener</code> - A callback used to listen to the "favorite" button view of a station item in the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerView</a></p>
+</BODY>
+</HTML>

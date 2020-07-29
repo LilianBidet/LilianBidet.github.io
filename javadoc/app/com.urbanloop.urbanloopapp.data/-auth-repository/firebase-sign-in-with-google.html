@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AuthRepository.firebaseSignInWithGoogle - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.data</a>&nbsp;/&nbsp;<a href="index.html">AuthRepository</a>&nbsp;/&nbsp;<a href="./firebase-sign-in-with-google.html">firebaseSignInWithGoogle</a><br/>
+<br/>
+<h1>firebaseSignInWithGoogle</h1>
+<a name="com.urbanloop.urbanloopapp.data.AuthRepository$firebaseSignInWithGoogle(com.google.firebase.auth.AuthCredential)"></a>
+<code><span class="keyword">fun </span><span class="identifier">firebaseSignInWithGoogle</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.AuthRepository$firebaseSignInWithGoogle(com.google.firebase.auth.AuthCredential)/googleAuthCredential">googleAuthCredential</span><span class="symbol">:</span>&nbsp;<span class="identifier">AuthCredential</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Signs in a user to the application with Google authentication credentials</p>
+<p>This method launches the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth.html#signinwithcredential">signInWithCredential</a> task.
+If the task is successful, it signs in the user to the application and creates the <a href="../-user-data/index.html">UserData</a> instance to return.
+If the user is already registered in the Firebase Authentication system of the application, it creates the <a href="../-user-data/index.html">UserData</a> instance using user data retrieved from the Firebase database.</p>
+<h3>Parameters</h3>
+<p><a name="googleAuthCredential"></a>
+<code>googleAuthCredential</code> - The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/AuthCredential">AuthCredential</a> used to authenticate the user</p>
+<p><strong>Return</strong><br/>
+The <a href="../-user-data/index.html">UserData</a> instance of the user who just signed in, held in a <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/MutableLiveData">MutableLiveData</a> class</p>
+</BODY>
+</HTML>

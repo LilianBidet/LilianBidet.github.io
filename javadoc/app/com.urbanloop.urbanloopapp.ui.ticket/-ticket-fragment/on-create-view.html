@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TicketFragment.onCreateView - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.ticket</a>&nbsp;/&nbsp;<a href="index.html">TicketFragment</a>&nbsp;/&nbsp;<a href="./on-create-view.html">onCreateView</a><br/>
+<br/>
+<h1>onCreateView</h1>
+<a name="com.urbanloop.urbanloopapp.ui.ticket.TicketFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)"></a>
+<code><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ticket.TicketFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ticket.TicketFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ticket.TicketFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#oncreateview">onCreateView</a> overridden to instantiate the user interface view</p>
+<p>This method initializes the fragment by doing the following :</p>
+<ul><li>Set the action bar Title</li>
+<li>Enable the OptionsMenu with the <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#sethasoptionsmenu">setHasOptionsMenu</a> method</li>
+<li>Inflate the view using <a href="https://developer.android.com/topic/libraries/data-binding">Data Binding</a></li>
+<li>Initialize the <a href="../-ticket-view-model/index.html">TicketViewModel</a> instance with <a href="init-view-model.html">initViewModel</a></li>
+<li>Checks the nfc activation with <a href="nfc-check.html">nfcCheck</a></li>
+<li>Initialize the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth">FirebaseAuth</a> instance</li>
+<li>Retrieve the QR Code of the ticket with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/StorageReference#getfile_1">getFile</a> method
+and shows it on the screen with the <a href="https://developer.android.com/reference/android/widget/ImageView#setImageBitmap(android.graphics.Bitmap)">setImageBitmap</a> method.</li>
+<li>Save the image <a href="https://developer.android.com/reference/kotlin/android/net/Uri">Uri</a> of the QR Code with <a href="save-image.html">saveImage</a></li>
+<li>Set up the UI listeners with : <a href="on-ticket-share-button.html">onTicketShareButton</a></li>
+</ul>
+</BODY>
+</HTML>

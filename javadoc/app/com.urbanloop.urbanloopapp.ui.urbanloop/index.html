@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.urbanloop.urbanloopapp.ui.urbanloop - app</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">app</a>&nbsp;/&nbsp;<a href="./index.html">com.urbanloop.urbanloopapp.ui.urbanloop</a><br/>
+<br/>
+<h2>Package com.urbanloop.urbanloopapp.ui.urbanloop</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-station-adapter/index.html">StationAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">StationAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FirestoreRecyclerAdapter</span><span class="symbol">&lt;</span><a href="../com.urbanloop.urbanloopapp.data/-station-data/index.html"><span class="identifier">StationData</span></a><span class="symbol">,</span>&nbsp;<a href="-station-adapter/-station-view-holder/index.html"><span class="identifier">StationViewHolder</span></a><span class="symbol">&gt;</span></code>
+<p>A <a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-the-firestorerecycleradapter">FirestoreRecyclerAdapter</a> class
+to populate the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerViews</a>
+in charge of showing the stations items in the <a href="-tab-stations-fragment/index.html">TabStationsFragment</a> and <a href="-tab-favorites-fragment/index.html">TabFavoritesFragment</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-stations-pager-adapter/index.html">StationsPagerAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">StationsPagerAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FragmentStatePagerAdapter</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentStatePagerAdapter">FragmentStatePagerAdapter</a>
+to populate pages inside the <a href="https://developer.android.com/reference/kotlin/androidx/viewpager/widget/ViewPager">ViewPager</a> of the <a href="-urbanloop-fragment/index.html">UrbanloopFragment</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-tab-favorites-fragment/index.html">TabFavoritesFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TabFavoritesFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment">Fragment</a> class
+providing a user interface to see the favorite urbanloop stations of the user and interact with them to take a ride.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-tab-favorites-view-model/index.html">TabFavoritesViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TabFavoritesViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="-tab-favorites-fragment/index.html">TabFavoritesFragment</a> data</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-tab-favorites-view-model-factory/index.html">TabFavoritesViewModelFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TabFavoritesViewModelFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModelProvider.Factory">ViewModelProvider.Factory</a>
+used to create the <a href="-tab-favorites-view-model/index.html">TabFavoritesViewModel</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-tab-recent-fragment/index.html">TabRecentFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TabRecentFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment">Fragment</a> class
+providing a user interface to see the urbanloop stations recently used by the user and interact with them to take a ride.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-tab-stations-fragment/index.html">TabStationsFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TabStationsFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment">Fragment</a> class
+providing a user interface to see the urbanloop stations and interact with them to take a ride.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-tab-stations-view-model/index.html">TabStationsViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TabStationsViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="-tab-stations-fragment/index.html">TabStationsFragment</a> data</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-tab-stations-view-model-factory/index.html">TabStationsViewModelFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TabStationsViewModelFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModelProvider.Factory">ViewModelProvider.Factory</a>
+used to create the <a href="-tab-stations-view-model/index.html">TabStationsViewModel</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-urbanloop-fragment/index.html">UrbanloopFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">UrbanloopFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment">Fragment</a> class
+providing a user interface to navigate through the urbanloop stations and interact with them to take a ride among three tabs:</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-urbanloop-view-model/index.html">UrbanloopViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">UrbanloopViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="-urbanloop-fragment/index.html">UrbanloopFragment</a> data</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-urbanloop-view-model-factory/index.html">UrbanloopViewModelFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">UrbanloopViewModelFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Factory</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModelProvider.Factory">ViewModelProvider.Factory</a>
+used to create the <a href="-urbanloop-view-model/index.html">UrbanloopViewModel</a> instance</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

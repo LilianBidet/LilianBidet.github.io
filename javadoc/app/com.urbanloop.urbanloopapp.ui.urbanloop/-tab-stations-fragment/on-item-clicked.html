@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TabStationsFragment.onItemClicked - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.urbanloop</a>&nbsp;/&nbsp;<a href="index.html">TabStationsFragment</a>&nbsp;/&nbsp;<a href="./on-item-clicked.html">onItemClicked</a><br/>
+<br/>
+<h1>onItemClicked</h1>
+<a name="com.urbanloop.urbanloopapp.ui.urbanloop.TabStationsFragment$onItemClicked(com.google.firebase.firestore.DocumentSnapshot)"></a>
+<code><span class="keyword">private</span> <span class="keyword">fun </span><span class="identifier">onItemClicked</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.urbanloop.TabStationsFragment$onItemClicked(com.google.firebase.firestore.DocumentSnapshot)/documentSnapshot">documentSnapshot</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Handles the click on a station "Go" button.</p>
+<p>This method is called when the "Go" button is clicked inside of a station item.
+First, it checks if the user is a child.</p>
+<p>If the user is a child :</p>
+<p>It checks if the the station clicked belongs to the allowed stations for this user and set a boolean accordingly.</p>
+<ul><li>If the station is allowed, it calls <a href="go-to-station.html">goToStation</a>.</li>
+<li>If the station is not allowed, it displays a <a href="https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar">Snackbar</a> to warn the user.</li>
+</ul>
+<p>If the user is not a child :</p>
+<p>It calls <a href="go-to-station.html">goToStation</a>.</p>
+<h3>Parameters</h3>
+<p><a name="documentSnapshot"></a>
+<code>documentSnapshot</code> - The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentSnapshot">DocumentSnapshot</a> which corresponds to the station item</p>
+</BODY>
+</HTML>

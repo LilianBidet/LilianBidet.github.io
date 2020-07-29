@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ProfileFragment.onDefaultCapsuleDropDownButton - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.profile</a>&nbsp;/&nbsp;<a href="index.html">ProfileFragment</a>&nbsp;/&nbsp;<a href="./on-default-capsule-drop-down-button.html">onDefaultCapsuleDropDownButton</a><br/>
+<br/>
+<h1>onDefaultCapsuleDropDownButton</h1>
+<a name="com.urbanloop.urbanloopapp.ui.profile.ProfileFragment$onDefaultCapsuleDropDownButton()"></a>
+<code><span class="keyword">private</span> <span class="keyword">fun </span><span class="identifier">onDefaultCapsuleDropDownButton</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Listen to the dropdown button that shows the interface allowing to select a default capsule.</p>
+<p>This method calls <a href="https://developer.android.com/reference/android/view/View#setOnClickListener(android.view.View.OnClickListener)">setOnClickListener</a> from the button view to invoke a callback when the button is clicked.
+Then, two cases are handled :</p>
+<ul><li>If the view of the interface is not expanded, it calls <a href="../-profile-view-model/on-default-capsule-drop-down-button.html">ProfileViewModel.onDefaultCapsuleDropDownButton</a>,
+set the visibility of the interface to <a href="https://developer.android.com/reference/kotlin/android/view/View#visible">View.VISIBLE</a>
+and change the dropdown icon displayed.</li>
+<li>If the view of the interface is expanded, it calls <a href="../-profile-view-model/on-default-capsule-drop-down-button.html">ProfileViewModel.onDefaultCapsuleDropDownButton</a>,
+set the visibility of the interface to <a href="https://developer.android.com/reference/kotlin/android/view/View#gone">View.GONE</a>
+and change the dropdown icon displayed.</li>
+</ul>
+</BODY>
+</HTML>

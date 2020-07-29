@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ProfileFragment.deleteAccount - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.profile</a>&nbsp;/&nbsp;<a href="index.html">ProfileFragment</a>&nbsp;/&nbsp;<a href="./delete-account.html">deleteAccount</a><br/>
+<br/>
+<h1>deleteAccount</h1>
+<a name="com.urbanloop.urbanloopapp.ui.profile.ProfileFragment$deleteAccount()"></a>
+<code><span class="keyword">private</span> <span class="keyword">fun </span><span class="identifier">deleteAccount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Deletes the account from the application.</p>
+<p>This method delete the account from the application by removing the user from the Firebase system.
+Two cases are handled :</p>
+<p>If the user has a Google account :</p>
+<ul><li>First it removes user data from the Firebase Database with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#delete">DocumentReference.delete</a> method.</li>
+<li>Then, it removes user data from the Firebase Storage with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/StorageReference#delete">StorageReference.delete</a> method.</li>
+<li>Finally, it calls <a href="re-auth-and-delete-with-google.html">reAuthAndDeleteWithGoogle</a> to delete the user from the Firebase Authentication system.</li>
+</ul>
+<p>If the user has an "email/password" account :</p>
+<ul><li>It calls <a href="re-auth-and-delete-with-email.html">reAuthAndDeleteWithEmail</a> to delete the user from the Firebase Authentication system.</li>
+</ul>
+</BODY>
+</HTML>

@@ -1,0 +1,210 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ProfileViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.profile</a>&nbsp;/&nbsp;<a href="./index.html">ProfileViewModel</a><br/>
+<br/>
+<h1>ProfileViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">ProfileViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-profile-fragment/index.html">ProfileFragment</a> data</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ProfileViewModel</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$<init>(com.urbanloop.urbanloopapp.data.FirebaseRepository)/firebaseRepository">firebaseRepository</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel">ViewModel</a> class used to manage the <a href="../-profile-fragment/index.html">ProfileFragment</a> data</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="_balance.html">_balance</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">_balance</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_default-capsule-type.html">_defaultCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">_defaultCapsuleType</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_email.html">_email</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">_email</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_is-default-capsule-expanded.html">_isDefaultCapsuleExpanded</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">_isDefaultCapsuleExpanded</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="_name.html">_name</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">_name</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="balance.html">balance</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">balance</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="default-capsule-type.html">defaultCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">defaultCapsuleType</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="email.html">email</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">email</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-repository.html">firebaseRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseRepository</span><span class="symbol">: </span><a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/index.html"><span class="identifier">FirebaseRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-default-capsule-expanded.html">isDefaultCapsuleExpanded</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isDefaultCapsuleExpanded</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="name.html">name</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="increase-balance.html">increaseBalance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">increaseBalance</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$increaseBalance(com.google.firebase.auth.FirebaseUser)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the balance for the provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a>
+in the Firebase database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-default-capsule-drop-down-button.html">onDefaultCapsuleDropDownButton</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDefaultCapsuleDropDownButton</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="is-default-capsule-expanded.html">isDefaultCapsuleExpanded</a> value with its opposite value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-default-capsule-radio-button-clicked.html">onDefaultCapsuleRadioButtonClicked</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDefaultCapsuleRadioButtonClicked</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$onDefaultCapsuleRadioButtonClicked(android.view.View)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Listen to the radio buttons' states to update the database accordingly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-balance.html">updateBalance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateBalance</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$updateBalance(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="balance.html">balance</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-default-capsule-type.html">updateDefaultCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateDefaultCapsuleType</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$updateDefaultCapsuleType(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="default-capsule-type.html">defaultCapsuleType</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-default-capsule-type-with-string.html">updateDefaultCapsuleTypeWithString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateDefaultCapsuleTypeWithString</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$updateDefaultCapsuleTypeWithString(kotlin.String)/capsuleType">capsuleType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="default-capsule-type.html">defaultCapsuleType</a> value with a provided string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-email.html">updateEmail</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateEmail</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$updateEmail(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="email.html">email</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-firebase-default-capsule-type.html">updateFirebaseDefaultCapsuleType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateFirebaseDefaultCapsuleType</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$updateFirebaseDefaultCapsuleType(com.google.firebase.auth.FirebaseUser)/user">user</span><span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseUser</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the default capsule type for the provided <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a>
+in the Firebase database</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-name.html">updateName</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateName</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.profile.ProfileViewModel$updateName(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="name.html">name</a> value with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

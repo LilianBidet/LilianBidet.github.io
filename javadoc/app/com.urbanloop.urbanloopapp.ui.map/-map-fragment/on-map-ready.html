@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MapFragment.onMapReady - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.map</a>&nbsp;/&nbsp;<a href="index.html">MapFragment</a>&nbsp;/&nbsp;<a href="./on-map-ready.html">onMapReady</a><br/>
+<br/>
+<h1>onMapReady</h1>
+<a name="com.urbanloop.urbanloopapp.ui.map.MapFragment$onMapReady(com.google.android.gms.maps.GoogleMap)"></a>
+<code><span class="keyword">fun </span><span class="identifier">onMapReady</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onMapReady(com.google.android.gms.maps.GoogleMap)/map">map</span><span class="symbol">:</span>&nbsp;<span class="identifier">GoogleMap</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developers.google.com/android/reference/com/google/android/gms/maps/OnMapReadyCallback">onMapReady</a> method overridden to configure the map</p>
+<p>This method configures the map dipslayed on the screen by doing the following :</p>
+<ul><li>Set a callback that's invoked when a marker is clicked with <a href="https://developers.google.com/android/reference/com/google/android/gms/maps/GoogleMap#public-void-setonmarkerclicklistener-googlemap.onmarkerclicklistener-listener">setOnMarkerClickListener</a></li>
+<li>Enable the my-location layer with <a href="https://developers.google.com/android/reference/com/google/android/gms/maps/GoogleMap#public-void-setmylocationenabled-boolean-enabled">setMyLocationEnabled</a></li>
+<li>Enable the my-location button with <a href="https://developers.google.com/android/reference/com/google/android/gms/maps/UiSettings#public-void-setmylocationbuttonenabled-boolean-enabled">setMyLocationButtonEnabled</a></li>
+<li>Show Urbanloop stations on the map with <a href="show-stations.html">showStations</a></li>
+<li>Get the device location and place the camera on it with <a href="get-device-location.html">getDeviceLocation</a></li>
+<li>Listen to the last location of the user with the <a href="https://developer.android.com/reference/android/location/LocationManager#requestLocationUpdates(java.lang.String,%20long,%20float,%20android.location.LocationListener)">LocationManager.requestLocationUpdates</a> method</li>
+</ul>
+<h3>Parameters</h3>
+<p><a name="map"></a>
+<code>map</code> - A non-null instance of a GoogleMap associated with the MapFragment or MapView that defines the callback.</p>
+</BODY>
+</HTML>

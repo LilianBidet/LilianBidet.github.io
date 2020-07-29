@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AuthRepository.createUserInFirebaseDatabaseIfNotExists - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.data</a>&nbsp;/&nbsp;<a href="index.html">AuthRepository</a>&nbsp;/&nbsp;<a href="./create-user-in-firebase-database-if-not-exists.html">createUserInFirebaseDatabaseIfNotExists</a><br/>
+<br/>
+<h1>createUserInFirebaseDatabaseIfNotExists</h1>
+<a name="com.urbanloop.urbanloopapp.data.AuthRepository$createUserInFirebaseDatabaseIfNotExists(com.urbanloop.urbanloopapp.data.UserData)"></a>
+<code><span class="keyword">fun </span><span class="identifier">createUserInFirebaseDatabaseIfNotExists</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.data.AuthRepository$createUserInFirebaseDatabaseIfNotExists(com.urbanloop.urbanloopapp.data.UserData)/authenticatedUser">authenticatedUser</span><span class="symbol">:</span>&nbsp;<a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Stores user data from the given <a href="../-user-data/index.html">UserData</a> instance in the Firebase database.</p>
+<p>This method gets the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>
+of the given user by launching a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#get">get</a> task.
+If no documents exists for this <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a>,
+it creates a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FirebaseFirestore#document">document</a> by launching a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#set">set</a> task.</p>
+<h3>Parameters</h3>
+<p><a name="authenticatedUser"></a>
+<code>authenticatedUser</code> - the <a href="../-user-data/index.html">UserData</a> instance used to create the document</p>
+<p><strong>Return</strong><br/>
+the <a href="../-user-data/index.html">UserData</a> instance of the user for whom a <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FirebaseFirestore#document">document</a> has just be stored in the Firebase database</p>
+</BODY>
+</HTML>

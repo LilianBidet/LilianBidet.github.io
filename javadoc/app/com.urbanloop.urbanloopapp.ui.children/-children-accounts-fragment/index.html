@@ -1,0 +1,176 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChildrenAccountsFragment - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.children</a>&nbsp;/&nbsp;<a href="./index.html">ChildrenAccountsFragment</a><br/>
+<br/>
+<h1>ChildrenAccountsFragment</h1>
+<code><span class="keyword">class </span><span class="identifier">ChildrenAccountsFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment">Fragment</a> class
+providing a user interface to manage children accounts.</p>
+<p>This fragment provides a user interface to manage children accounts made up of the following elements :</p>
+<ul><li>A header section where you can click on a button to create a child account</li>
+<li>A section that shows all the children accounts linked to the current user and allows to manage each one of them by clicking on a button</li>
+</ul>
+<p>To match the <a href="https://developer.android.com/jetpack/guide#recommended-app-arch">recommended app architecture</a>,
+this class interacts with the <a href="../-children-accounts-view-model/index.html">ChildrenAccountsViewModel</a> to handle it's data logic.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ChildrenAccountsFragment</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment">Fragment</a> class
+providing a user interface to manage children accounts.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">adapter</span><span class="symbol">: </span><span class="identifier">FirestoreRecyclerAdapter</span><span class="symbol">&lt;</span><a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">,</span>&nbsp;<a href="../-child-adapter/-child-view-holder/index.html"><span class="identifier">ChildViewHolder</span></a><span class="symbol">&gt;</span></code>
+<p>The <a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-the-firestorerecycleradapter">FirestoreRecyclerAdapter</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="binding.html">binding</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">binding</span><span class="symbol">: </span><span class="identifier">ChildrenAccountsFragmentBinding</span></code>
+<p>The Binding class used to bind UI to data sources
+See <a href="https://developer.android.com/topic/libraries/data-binding">Data Binding Library</a> for more information</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="firebase-database.html">firebaseDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">firebaseDatabase</span><span class="symbol">: </span><span class="identifier">FirebaseFirestore</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FirebaseFirestore">FirebaseFirestore</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="m-query.html">mQuery</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">mQuery</span><span class="symbol">: </span><span class="identifier">Query</span></code>
+<p>The <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/Query">Query</a> used to configure the <a href="https://github.com/firebase/FirebaseUI-Android/blob/master/firestore/README.md#using-the-firestorerecycleradapter">FirestoreRecyclerAdapter</a> instance</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="view-model.html">viewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">viewModel</span><span class="symbol">: </span><a href="../-children-accounts-view-model/index.html"><span class="identifier">ChildrenAccountsViewModel</span></a></code>
+<p>The <a href="../-children-accounts-view-model/index.html">ChildrenAccountsViewModel</a> instance associated with the fragment</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="go-to-register-child-activity.html">goToRegisterChildActivity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">goToRegisterChildActivity</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Goes to the <a href="../../com.urbanloop.urbanloopapp.ui.register-child/-register-child-activity/index.html">RegisterChildActivity</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="init-view-model.html">initViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">initViewModel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Initializes the <a href="../-children-accounts-view-model/index.html">ChildrenAccountsViewModel</a> instance used by the fragment</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-add-child.html">onAddChild</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAddChild</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Listen to the Add button</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-options-menu.html">onCreateOptionsMenu</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateOptionsMenu</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildrenAccountsFragment$onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)/menu">menu</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/Menu.html"><span class="identifier">Menu</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildrenAccountsFragment$onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/MenuInflater.html"><span class="identifier">MenuInflater</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#oncreateoptionsmenu">onCreateOptionsMenu</a> method overridden
+to inflate a custom options menu.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view.html">onCreateView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildrenAccountsFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildrenAccountsFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildrenAccountsFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#oncreateview">onCreateView</a> overridden to instantiate the user interface view</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-item-clicked.html">onItemClicked</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onItemClicked</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildrenAccountsFragment$onItemClicked(com.google.firebase.firestore.DocumentSnapshot)/documentSnapshot">documentSnapshot</span><span class="symbol">:</span>&nbsp;<span class="identifier">DocumentSnapshot</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Calls <a href="../-children-accounts-view-model/on-child-button-clicked.html">ChildrenAccountsViewModel.onChildButtonClicked</a> when an child item button is clicked.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-start.html">onStart</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStart</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#onstart">onStart</a> method overridden
+to begin listening for data with the <a href="adapter.html">adapter</a> instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-stop.html">onStop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onStop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#onstop">onStop</a> method overridden
+to stop listening to data with the <a href="adapter.html">adapter</a> instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-up-recycler-view.html">setUpRecyclerView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUpRecyclerView</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Set up the <a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView">RecyclerView</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

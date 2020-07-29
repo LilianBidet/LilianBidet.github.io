@@ -1,0 +1,242 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MapFragment - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.map</a>&nbsp;/&nbsp;<a href="./index.html">MapFragment</a><br/>
+<br/>
+<h1>MapFragment</h1>
+<code><span class="keyword">class </span><span class="identifier">MapFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><span class="identifier">OnMapReadyCallback</span><span class="symbol">, </span><span class="identifier">OnMarkerClickListener</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment">Fragment</a> class
+providing a user interface to reach Urbanloop stations from a map view.</p>
+<p>This fragment provides a user interface to reach Urbanloop stations from a map view. The interface is made up of the following elements :</p>
+<ul><li>A map view displayed with the Google Maps API</li>
+<li>A button allowing the user to display an itinerary to the nearest station on the map view</li>
+</ul>
+<p>To match the <a href="https://developer.android.com/jetpack/guide#recommended-app-arch">recommended app architecture</a>,
+this class interacts with the <a href="../-map-view-model/index.html">MapViewModel</a> to handle it's data logic.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MapFragment</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment">Fragment</a> class
+providing a user interface to reach Urbanloop stations from a map view.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="auth.html">auth</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">auth</span><span class="symbol">: </span><span class="identifier">FirebaseAuth</span></code>
+<p>A <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseAuth">FirebaseAuth</a> instance to interact with the Firebase Authentication SDK</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="binding.html">binding</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">binding</span><span class="symbol">: </span><span class="identifier">HomeFragmentBinding</span></code>
+<p>The Binding class used to bind UI to data sources
+See <a href="https://developer.android.com/topic/libraries/data-binding">Data Binding Library</a> for more information</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="exit-text.html">exitText</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">exitText</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/TextView.html"><span class="identifier">TextView</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="info-text.html">infoText</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">infoText</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/TextView.html"><span class="identifier">TextView</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="itinerary-button.html">itineraryButton</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">itineraryButton</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/Button.html"><span class="identifier">Button</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="lastpos.html">lastpos</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lastpos</span><span class="symbol">: </span><span class="identifier">LatLng</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="m-last-known-location.html">mLastKnownLocation</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">mLastKnownLocation</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/location/Location.html"><span class="identifier">Location</span></a></code>
+<p>A <a href="https://developer.android.com/reference/kotlin/android/location/Location">Location</a> to represent the last known location of the user</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="m-map.html">mMap</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">mMap</span><span class="symbol">: </span><span class="identifier">GoogleMap</span></code>
+<p>The <a href="https://developers.google.com/android/reference/com/google/android/gms/maps/GoogleMap">GoogleMap</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="view-model.html">viewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">viewModel</span><span class="symbol">: </span><a href="../-map-view-model/index.html"><span class="identifier">MapViewModel</span></a></code>
+<p>The <a href="../-map-view-model/index.html">MapViewModel</a> instance associated with the fragment</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="draw-itinerary.html">drawItinerary</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">drawItinerary</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$drawItinerary(com.google.android.gms.maps.model.LatLng, com.google.android.gms.maps.model.LatLng)/origin">origin</span><span class="symbol">:</span>&nbsp;<span class="identifier">LatLng</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$drawItinerary(com.google.android.gms.maps.model.LatLng, com.google.android.gms.maps.model.LatLng)/dest">dest</span><span class="symbol">:</span>&nbsp;<span class="identifier">LatLng</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Draws an itinerary between two coordinates</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-itinerary-to-nearest-station.html">drawItineraryToNearestStation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">drawItineraryToNearestStation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Draws the itinerary to the nearest Urbanloop station</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-device-location.html">getDeviceLocation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDeviceLocation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Gets the device location and position the map on it</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-nearest-station.html">getNearestStation</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNearestStation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.urbanloop.urbanloopapp.data/-station-data/index.html"><span class="identifier">StationData</span></a></code>
+<p>Gets the nearest Urbanloop station from the user position</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="init-view-model.html">initViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">initViewModel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Initializes the <a href="../-map-view-model/index.html">MapViewModel</a> instance used by the fragment</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activity-created.html">onActivityCreated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onActivityCreated</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onActivityCreated(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#onactivitycreated">onActivityCreated</a> method overridden to set up the map and request permissions</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-options-menu.html">onCreateOptionsMenu</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateOptionsMenu</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)/menu">menu</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/Menu.html"><span class="identifier">Menu</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/MenuInflater.html"><span class="identifier">MenuInflater</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#oncreateoptionsmenu">onCreateOptionsMenu</a> method overridden
+to inflate a custom options menu.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view.html">onCreateView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#oncreateview">onCreateView</a> overridden to instantiate the user interface view</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-join-station-button-clicked.html">onJoinStationButtonClicked</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onJoinStationButtonClicked</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Listen to the join button</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-map-ready.html">onMapReady</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onMapReady</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onMapReady(com.google.android.gms.maps.GoogleMap)/map">map</span><span class="symbol">:</span>&nbsp;<span class="identifier">GoogleMap</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developers.google.com/android/reference/com/google/android/gms/maps/OnMapReadyCallback">onMapReady</a> method overridden to configure the map</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-marker-click.html">onMarkerClick</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onMarkerClick</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.map.MapFragment$onMarkerClick(com.google.android.gms.maps.model.Marker)/p0">p0</span><span class="symbol">:</span>&nbsp;<span class="identifier">Marker</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p><a href="https://developers.google.com/android/reference/com/google/android/gms/maps/GoogleMap.OnMarkerClickListener#public-abstract-boolean-onmarkerclick-marker-marker">onMarkerClick</a> method overridden
+to listen to the markers on the map.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="show-stations.html">showStations</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">showStations</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Displays Urbanloop stations on the map</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

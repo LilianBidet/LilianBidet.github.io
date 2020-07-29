@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ProfileFragment.reAuthAndDeleteWithEmail - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.profile</a>&nbsp;/&nbsp;<a href="index.html">ProfileFragment</a>&nbsp;/&nbsp;<a href="./re-auth-and-delete-with-email.html">reAuthAndDeleteWithEmail</a><br/>
+<br/>
+<h1>reAuthAndDeleteWithEmail</h1>
+<a name="com.urbanloop.urbanloopapp.ui.profile.ProfileFragment$reAuthAndDeleteWithEmail()"></a>
+<code><span class="keyword">private</span> <span class="keyword">fun </span><span class="identifier">reAuthAndDeleteWithEmail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Re-authenticates an "email/password" user in order to delete the account from the Firebase Authentication system.</p>
+<p>This method creates an <a href="https://developer.android.com/reference/kotlin/android/app/AlertDialog">AlertDialog</a> and shows it on the screen to ask the user for his or her credentials.
+Then, it retrieves the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/AuthCredential">AuthCredential</a>
+using the appropriate fields with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/EmailAuthProvider.html#getcredential">EmailAuthProvider.getCredential</a> method.
+When it's donne :</p>
+<ul><li>First it removes user data from the Firebase Database with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#delete">DocumentReference.delete</a> method.</li>
+<li>Then, it removes user data from the Firebase Storage with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/storage/StorageReference#delete">StorageReference.delete</a> method.</li>
+<li>Finally, it re-authenticates the user with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser#reauthenticate">reauthenticate</a> method
+and delete the account from the Firebase Authentication system with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser#delete">delete</a> method</li>
+</ul>
+<p>See these links for more information :</p>
+<ul><li><a href="https://firebase.google.com/docs/auth/android/manage-users#delete_a_user">Delete a user</a></li>
+<li><a href="https://firebase.google.com/docs/auth/android/manage-users#re-authenticate_a_user">Re-authenticate a user</a></li>
+</ul>
+</BODY>
+</HTML>

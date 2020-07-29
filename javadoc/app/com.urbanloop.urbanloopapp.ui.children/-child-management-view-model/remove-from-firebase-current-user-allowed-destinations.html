@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChildManagementViewModel.removeFromFirebaseCurrentUserAllowedDestinations - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.children</a>&nbsp;/&nbsp;<a href="index.html">ChildManagementViewModel</a>&nbsp;/&nbsp;<a href="./remove-from-firebase-current-user-allowed-destinations.html">removeFromFirebaseCurrentUserAllowedDestinations</a><br/>
+<br/>
+<h1>removeFromFirebaseCurrentUserAllowedDestinations</h1>
+<a name="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$removeFromFirebaseCurrentUserAllowedDestinations(kotlin.String, kotlin.String)"></a>
+<code><span class="keyword">private</span> <span class="keyword">fun </span><span class="identifier">removeFromFirebaseCurrentUserAllowedDestinations</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$removeFromFirebaseCurrentUserAllowedDestinations(kotlin.String, kotlin.String)/userID">userID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.children.ChildManagementViewModel$removeFromFirebaseCurrentUserAllowedDestinations(kotlin.String, kotlin.String)/destinationName">destinationName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Remove a destination from the allowed destinations of a user who corresponds to the provided user ID in the Firebase database.</p>
+<p>This method calls <a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/get-stations-data-reference.html">FirebaseRepository.getStationsDataReference</a> to get the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/CollectionReference">CollectionReference</a>
+corresponding to the stations and filter it to <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#get">get</a>
+the station which corresponds to the provided destination name with <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/Query#whereequalto">whereEqualTo</a>.</p>
+<p>Then, the station id is removed from the allowedDestination field of the user data which corresponds to the provided user ID with the following methods :</p>
+<ul><li><a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#update_1">update</a></li>
+<li><a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/FieldValue#arrayremove">arrayRemove</a></li>
+</ul>
+<h3>Parameters</h3>
+<p><a name="userID"></a>
+<code>userID</code> - The uid of the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/auth/FirebaseUser">FirebaseUser</a> of whom it updates data</p>
+<p><a name="destinationName"></a>
+<code>destinationName</code> - The name of the removed destination</p>
+</BODY>
+</HTML>

@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SplashActivity - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.splash</a>&nbsp;/&nbsp;<a href="./index.html">SplashActivity</a><br/>
+<br/>
+<h1>SplashActivity</h1>
+<code><span class="keyword">class </span><span class="identifier">SplashActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span></code>
+<p>An <a href="https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity">AppCompatActivity</a> class
+providing a waiting screen to the application that checks the authentication state at launch.</p>
+<p>This activity provides a waiting screen made up of the following elements :</p>
+<ul><li>A Urbanloop header logo</li>
+</ul>
+<p>To match the <a href="https://developer.android.com/jetpack/guide#recommended-app-arch">recommended app architecture</a>,
+this class interacts with the <a href="../-splash-view-model/index.html">SplashViewModel</a> to handle it's data logic.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">SplashActivity</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>An <a href="https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity">AppCompatActivity</a> class
+providing a waiting screen to the application that checks the authentication state at launch.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="splash-view-model.html">splashViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">splashViewModel</span><span class="symbol">: </span><a href="../-splash-view-model/index.html"><span class="identifier">SplashViewModel</span></a></code>
+<p>The <a href="../-splash-view-model/index.html">SplashViewModel</a> instance associated with the activity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="check-if-user-is-authenticated.html">checkIfUserIsAuthenticated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">checkIfUserIsAuthenticated</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Checks if a user is authenticated and react accordingly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-from-database.html">getUserFromDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUserFromDatabase</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.splash.SplashActivity$getUserFromDatabase(kotlin.String)/uid">uid</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Gets user data from the database with the <a href="../-splash-view-model/index.html">SplashViewModel</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="go-to-auth-in-activity.html">goToAuthInActivity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">goToAuthInActivity</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Goes to the <a href="../../com.urbanloop.urbanloopapp.ui.auth/-auth-activity/index.html">AuthActivity</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="go-to-main-activity.html">goToMainActivity</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">goToMainActivity</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.splash.SplashActivity$goToMainActivity(com.urbanloop.urbanloopapp.data.UserData)/user">user</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Goes to the <a href="../../com.urbanloop.urbanloopapp/-main-activity/index.html">MainActivity</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="init-splash-view-model.html">initSplashViewModel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">initSplashViewModel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Initializes the <a href="../-splash-view-model/index.html">SplashViewModel</a> instance used by the activity</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.splash.SplashActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/android/app/Activity#oncreate_1">onCreate</a> method overridden to perform the startup logic of the activity</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

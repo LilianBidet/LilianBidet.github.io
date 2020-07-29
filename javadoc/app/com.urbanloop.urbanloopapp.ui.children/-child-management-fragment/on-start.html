@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChildManagementFragment.onStart - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.children</a>&nbsp;/&nbsp;<a href="index.html">ChildManagementFragment</a>&nbsp;/&nbsp;<a href="./on-start.html">onStart</a><br/>
+<br/>
+<h1>onStart</h1>
+<a name="com.urbanloop.urbanloopapp.ui.children.ChildManagementFragment$onStart()"></a>
+<code><span class="keyword">fun </span><span class="identifier">onStart</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment#onstart">onStart</a> method overriden
+to interact with the Firebase database and get <a href="https://firebase.google.com/docs/firestore/query-data/listen">realtime updates</a>
+of the child's data</p>
+<p>This method calls <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#addsnapshotlistener">addSnapshotListener</a>
+from the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference">DocumentReference</a> referencing the child's data to listen to its changes.
+When the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentSnapshot">DocumentSnapshot</a> is updated,
+it creates a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance created from the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentSnapshot">DocumentSnapshot</a>
+and updates the <a href="../-child-management-view-model/index.html">ChildManagementViewModel</a> data from it with the following methods :</p>
+<ul><li><a href="../-child-management-view-model/update-balance.html">ChildManagementViewModel.updateBalance</a></li>
+<li><a href="../-child-management-view-model/update-child-i-d.html">ChildManagementViewModel.updateChildID</a></li>
+<li><a href="../-child-management-view-model/update-child-name.html">ChildManagementViewModel.updateChildName</a></li>
+<li><a href="../-child-management-view-model/update-allowed-destinations.html">ChildManagementViewModel.updateAllowedDestinations</a></li>
+</ul>
+<p>It also updates the UI to make the stations checkboxes match the allowed destinations retrieved from the <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance</p>
+<p>See these links for more information :</p>
+<ul><li><a href="https://firebase.google.com/docs/firestore/query-data/get-data">Get data with Cloud Firestore</a></li>
+<li><a href="https://firebase.google.com/docs/firestore/query-data/listen">Get realtime updates with Cloud Firestore</a></li>
+</ul>
+</BODY>
+</HTML>

@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TicketViewModel.updateTicketInformation - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.urbanloop.urbanloopapp.ui.ticket</a>&nbsp;/&nbsp;<a href="index.html">TicketViewModel</a>&nbsp;/&nbsp;<a href="./update-ticket-information.html">updateTicketInformation</a><br/>
+<br/>
+<h1>updateTicketInformation</h1>
+<a name="com.urbanloop.urbanloopapp.ui.ticket.TicketViewModel$updateTicketInformation(com.urbanloop.urbanloopapp.data.UserData)"></a>
+<code><span class="keyword">fun </span><span class="identifier">updateTicketInformation</span><span class="symbol">(</span><span class="identifier" id="com.urbanloop.urbanloopapp.ui.ticket.TicketViewModel$updateTicketInformation(com.urbanloop.urbanloopapp.data.UserData)/userData">userData</span><span class="symbol">:</span>&nbsp;<a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html"><span class="identifier">UserData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates the <a href="current-destination.html">currentDestination</a> and the <a href="current-capsule-type.html">currentCapsuleType</a> values with a <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance.</p>
+<p>This method calls the <a href="../../com.urbanloop.urbanloopapp.data/-firebase-repository/get-station-data-reference-from-i-d.html">FirebaseRepository.getStationDataReferenceFromID</a>
+with the id of the current destination stored in the <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance
+in order to get its information from the Firebase database with the <a href="https://firebase.google.com/docs/reference/kotlin/com/google/firebase/firestore/DocumentReference#get">get</a> method.
+Then, it can update the <a href="current-destination.html">currentDestination</a> value from the <a href="../../com.urbanloop.urbanloopapp.data/-station-data/index.html">StationData</a> instance retrieved.</p>
+<h3>Parameters</h3>
+<p><a name="userData"></a>
+<code>userData</code> - The <a href="../../com.urbanloop.urbanloopapp.data/-user-data/index.html">UserData</a> instance used to update the values.</p>
+</BODY>
+</HTML>
